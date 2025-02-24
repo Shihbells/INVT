@@ -3,10 +3,14 @@ html {
   width: 100%;
 }
 
+/* Ensure all text uses monospace */
+* {
+  font-family: "Courier New", Courier, monospace !important;
+}
+
 body {
   margin: 0;
   padding: 10px;
-  font-family: monospace;
   background-color: aliceblue;
 }
 
@@ -21,7 +25,6 @@ button {
   border: none;
   color: white;
   padding: 15px 32px;
-  font-family: monospace;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -30,7 +33,6 @@ button {
 }
 
 .menubar {
-  font-family: monospace;
   display: flex;
   justify-content: center; /* Center buttons horizontally */
   align-items: center;
@@ -111,7 +113,6 @@ td, th {
 }
 
 .export-button {
-  font-family: monospace;
   background-color: white;
   color: black;
   padding: 10px 20px;
