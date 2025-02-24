@@ -11,20 +11,21 @@ html {
 body {
   margin: 0;
   padding: 10px;
-  background-color: aliceblue;
+  background-color: darkgreen;
 }
 
 h1,
 h3 {
   text-align: center;
-  color: black;
+  color: white;
 }
 
 button {
-  background-color: darkgreen;
+  background-color: whitesmoke;
   border: none;
-  color: white;
-  padding: 15px 32px;
+  border-radius: 5px;
+  color: black;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -32,31 +33,47 @@ button {
   font-size: 20px;
 }
 
+button:hover {
+  background-color: black;
+  color: white;
+}
+
 .menubar {
   display: flex;
-  justify-content: center; /* Center buttons horizontally */
+  justify-content: center;
+  /* Center buttons horizontally */
   align-items: center;
-  gap: 10px; /* Adds spacing between buttons */
+  gap: 10px;
+  /* Adds spacing between buttons */
   background-color: darkgreen;
   padding: 10px;
 }
 
 .list {
   display: flex;
-  justify-content: center; /* Center the table horizontally */
+  justify-content: center;
+  /* Center the table horizontally */
 }
 
 table {
-  width: 80%; /* Adjust width to fit the content */
-  max-width: 600px; /* Prevents table from getting too large */
+  width: 80%;
+  /* Adjust width to fit the content */
+  max-width: 600px;
+  /* Prevents table from getting too large */
   color: black;
-  border: 1px solid darkgreen;
+  background: whitesmoke;
+  border: 1px solid black;
+  border-style: dashed;
+  border-radius: 5px;
   margin-top: 20px;
-  text-align: center; /* Center text in table cells */
+  text-align: center;
+  /* Center text in table cells */
 }
 
-td, th {
-  padding: 10px; /* Adds spacing in table cells */
+td,
+th {
+  padding: 10px;
+  /* Adds spacing in table cells */
   text-align: center;
 }
 
@@ -76,8 +93,10 @@ td, th {
 }
 
 .done-button-container {
-  text-align: center; /* Centering the button */
-  margin-top: 20px; /* Spacing from the table */
+  text-align: center;
+  /* Centering the button */
+  margin-top: 20px;
+  /* Spacing from the table */
 }
 
 .menubar-done-button {
@@ -113,7 +132,7 @@ td, th {
 }
 
 .export-button {
-  background-color: white;
+  background-color: whitesmoke;
   color: black;
   padding: 10px 20px;
   border: 2px solid black;
@@ -126,4 +145,11 @@ td, th {
 .export-button:hover {
   background-color: black;
   color: white;
+}
+
+footer {
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
 }
