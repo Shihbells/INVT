@@ -6,6 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Inventory</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  
+  <!-- Firebase SDK -->
+  <script type="module">
+    // Import Firebase modules
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+    // Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyB-SjhRJLTW8CrrZiqk6GG7v-FkEm48x4Q",
+      authDomain: "invt-64f41.firebaseapp.com",
+      projectId: "invt-64f41",
+      storageBucket: "invt-64f41.appspot.com",
+      messagingSenderId: "124044206587",
+      appId: "1:124044206587:web:080a3c3abaa723b5c06b5e",
+      measurementId: "G-4NV5B1VPWG"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    
+    // Make db accessible in script.js
+    window.db = db;
+  </script>
+
 </head>
 
 <body>
@@ -44,7 +70,7 @@
     <button class="export-button">Export Inventory</button>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js" type="module"></script>
 </body>
 
 </html>
