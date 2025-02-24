@@ -1,0 +1,125 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: Calibri;
+  background-color: aliceblue;
+}
+
+h1,
+h3 {
+  text-align: center;
+  color: black;
+}
+
+button {
+  background-color: darkgreen;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menubar {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center;
+  gap: 10px; /* Adds spacing between buttons */
+  background-color: darkgreen;
+  padding: 10px;
+}
+
+.list {
+  display: flex;
+  justify-content: center; /* Center the table horizontally */
+}
+
+table {
+  width: 80%; /* Adjust width to fit the content */
+  max-width: 600px; /* Prevents table from getting too large */
+  color: black;
+  border: 1px solid darkgreen;
+  margin-top: 20px;
+  text-align: center; /* Center text in table cells */
+}
+
+td, th {
+  padding: 10px; /* Adds spacing in table cells */
+  text-align: center;
+}
+
+.edit-row-button {
+  background-color: darkgreen;
+  color: white;
+  font-size: 14px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.edit-row-button:hover {
+  background-color: peachpuff;
+}
+
+.done-button-container {
+  text-align: center; /* Centering the button */
+  margin-top: 20px; /* Spacing from the table */
+}
+
+.menubar-done-button {
+  background-color: darkgreen;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.menubar-done-button:hover {
+  background-color: peachpuff;
+}
+
+.item-status {
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.item-status.high {
+  color: green;
+}
+
+.item-status.medium {
+  color: orange;
+}
+
+.item-status.low {
+  color: red;
+}
+
+.export-button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: 2px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.export-button:hover {
+  background-color: black;
+  color: white;
+}

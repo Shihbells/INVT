@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventory</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Inventory</h1>
+  <hr>
+  <h3 id="current-date"></h3>
+
+  <div class="container">
+    <div class="menubar">
+      <div class="menubar-item">
+        <button class="menubar-add-button">Add</button>
+        <button class="menubar-remove-button">Remove</button>
+      </div>
+    </div>
+
+    <div class="list">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="done-button-container">
+    <button class="menubar-done-button" style="display: none;">Done</button>
+    <br>
+    <button class="export-button">Export Inventory</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
